@@ -1,0 +1,48 @@
+.\" =========================================================================
+.\" Copyright (c) 2019 Andreas Fink <andreas@fink.org
+.\"
+.\" LcensedSee the accompanying file LICENSE, (MIT License)
+.\" ==========================================================================
+.\"
+
+.\"
+.TH pwgen 1 "2 June 2019 (v1.1)" "Andreas Fink" "Andreas Fink"
+.SH NAME
+pwgen \- generate passwords
+.SH SYNOPSIS
+.B pwgen
+[\fIpassword-length\fR] [\fIcount\fR]
+.PP
+.PP
+.SH DESCRIPTION
+.I pwgen
+is a utility function to create random passwords. It avoids the characters
+zero and o and 1 and L because in some fonts they look very similar.
+Also Y and Z are not used to avoid errors on german keyboards
+when the keyboard mapping is back to US keyboard mapping.
+
+.SH "USE"
+.PP
+The program is useful for generating user passwords out of scripts.
+Without any parameters it creates one password which is consisting of 8 characters
+.LP
+
+.LP
+\fBCommand\ format.\fP  The basic command format is
+.IP
+\fBpwgen\fR password-length count
+.LP
+where \fIpassword-length\fR defaults to 8 and  \fIcount\fR defaults to 1
+
+
+.SH "OPTIONS"
+.TP
+.PD 0
+.BI \--help
+.TP
+.PD
+.B \-?
+Prints out the command line syntax
+
+
+.\" end of file
