@@ -4,6 +4,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 
 /* No zero/o, no i/1 no y/z to avoid mistyping/misreading */
@@ -17,7 +18,7 @@ int main(int argc, char *argv[])
 	int count;
 	char	out[256];
 
-	srandomdev();
+	srand(time(NULL));   // Initialization, should only be called once.
 	if (argc < 2)
 		len = 8;
 	else
