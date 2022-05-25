@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 
 	if (argc < 2)
 	{
-		len = 8;
+		len = 12;
 	}
 	else
 	{
