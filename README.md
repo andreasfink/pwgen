@@ -6,14 +6,20 @@ To use type
 pwgen
 
 
-abd you will get a random 8 symbol password
+and you will get a random 12 symbol password
 
 
 if you type 
 
 pwgen {n}
 
-you get a password of n characters length.
+you get a password of {n} characters length.
+
+if you type
+
+pwgen {n} {m}
+
+you get {m} passwords of {n} characters length
 
 pwgen does not use zero or 'o' or '1' and 'L'
 to avoid difficult visual representation in certain fonts.
